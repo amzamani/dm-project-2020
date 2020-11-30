@@ -1,0 +1,97 @@
+body {
+    background: url("/bg.png") fixed;
+        /* background-size: cover;
+    background-repeat: no-repeat; */
+    font-family: 'Montserrat', sans-serif;
+}
+.about-tips {
+    border-top: 1px solid #EEEEEE;
+    padding: 50px 50px;
+}
+
+.about-tips p {
+    margin-bottom: 20px;
+}
+
+.about-tips a {
+    color: #249369;
+    font-weight: 500;
+}
+#container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin: 0 auto;
+}
+h1 {
+    background-color: burlywood;
+    padding-bottom: 2px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.br {
+    border-right: 2px solid black;
+}
+
+.bl {
+    border-left: 2px solid black;
+}
+
+.bt {
+    border-top: 2px solid black;
+}
+
+.bb {
+    border-bottom: 2px solid black;
+}
+
+.br {
+    border-right: 2px solid black;
+}
+
+.table td {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+}
+
+.table {
+    width: auto;
+    height: auto;
+}
+
+span {
+    line-height: 1.5;
+}
+
+#box {
+    margin: 0 auto;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #000000;
+}
+
+input {
+    width: 89px;
+    height: 89px;
+    font-size: 50px;
+    padding: 0;
+    border: none;
+}
+
+.btn {
+    border-width: 2px;
+    font-weight: 600;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

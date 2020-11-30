@@ -35,9 +35,14 @@ function setTemp(board, temp) {
 function setColor(temp) {
 
     for (var i = 0; i < 9; i++) {
+        
         for (var j = 0; j < 9; j++) {
+            arr[i][j].style.background = "white";
+            
             if (temp[i][j] == true) {
-                arr[i][j].style.color = "#DC3545";
+                arr[i][j].style.background = "whitesmoke";
+                arr[i][j].style.color = "black";
+                
             }
 
         }
@@ -49,7 +54,7 @@ function resetColor() {
     for (var i = 0; i < 9; i++) {
         for (var j = 0; j < 9; j++) {
 
-            arr[i][j].style.color = "green";
+            arr[i][j].style.color = "#356fdc";
 
 
         }
@@ -61,6 +66,7 @@ var board = [[], [], [], [], [], [], [], [], []]
 
 let button = document.getElementById('generate-sudoku')
 let solve = document.getElementById('solve')
+let reset = document.getElementById("reset")
 
 console.log(arr)
 function changeBoard(board) {
@@ -79,6 +85,7 @@ function changeBoard(board) {
 
 
 button.onclick = function () {
+    
     var xhrRequest = new XMLHttpRequest()
     xhrRequest.onload = function () {
         var response = JSON.parse(xhrRequest.response)
@@ -165,4 +172,7 @@ function solveSudoku(board) {
 
 solve.onclick = function () {
     solveSudoku(board)
+}
+reset.onclick = function(){
+    console.log("reset same");
 }
